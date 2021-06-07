@@ -1,0 +1,27 @@
+header img {
+    width: 100px;
+  }
+
+  p {
+    line-height: 1.5;
+    background-color:palevioletred;
+    font-size:60px;
+
+  }
+
+  main h1 {
+    text-align: center;
+    color:black;
+    font-size: 70px;
+    font-weight: 500;
+
+
+  }
+footer {
+  text-align: center;
+  background:pink;
+  color:purple;
+  line-height:100px
+}
+
+  
