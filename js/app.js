@@ -49,7 +49,7 @@ if( Qus3 === 'yes' || Qus3 === 'y')
 else if( Qus3 === 'no' || Qus3 === 'n')
 {
    alert ('correct answer!!');
-   counter ++ ;
+   counter ++;
 
 } 
 else
@@ -64,7 +64,7 @@ if( Qus4 === 'yes' || Qus4 === 'y')
 {
     //console.log (Qus4);
     alert ( 'yes,correct answer');
-    counter ++ ;
+    counter ++;
 }
 else if( Qus4 === 'no' || Qus4 === 'n')
 {
@@ -113,11 +113,14 @@ else if ( myAge < 26){
  
 }
 else {
+    counter ++;
 
-  alert ('correct answer'); break;} 
-  counter ++ ;  
- 
+  alert ('correct answer'); break;}
+
+
 }
+ 
+
 
 alert ('my Age is 26');
 
@@ -140,8 +143,10 @@ else if (favFruits === 'banana' || favFruits === 'strawberries'
 || favFruits === 'apple')
 
 { 
-   alert ('correct answer'); break;}
-   counter ++ ;
+    counter ++;  
+
+   alert ('correct answer'); break;} 
+   
    
 }
 
