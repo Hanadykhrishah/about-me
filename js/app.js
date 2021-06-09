@@ -5,99 +5,51 @@ let counter = 0;
 let userName = prompt ('please Enter Your Name !');
 alert ('welcome to my webpage ' + userName );
 
-let Qus1 = prompt ('Do You Think Iam an Engineer?').toLowerCase();
 
-if( Qus1 === 'yes' || Qus1 === 'y')
-{
-    //console.log (Qus1);
-    alert ( 'yes,correct answer');
-    counter ++;
-}
-else if( Qus1 === 'no' || Qus1 === 'n')
-{
-   alert ('wrong answer, really I am Electrical Engineer');
-} 
-else
-{
-    alert ('please type (yes) or (no) or (y) or (n)');
-}
+function userQuestion(question, correctAns, unCorrectAns) {
+    let userInput;
+    do {
+      userInput = prompt(question).toLowerCase();
+    } while(userInput !== 'yes' && userInput !== 'y' && userInput !== 'no' && userInput !== 'n');
+  
+    if(userInput === 'yes' || userInput === 'y') {
+      alert ('yes correct Ans');  
+     // console.log(correctAns);
+     counter ++;
+    } else {
+      alert ('wrong Ans');  
+      //console.log(unCorrectAns);
+    }
+  }
 
-let Qus2 = prompt ('Do you think I write poetry?').toLowerCase();
+  userQuestion('Do You Think Iam an Engineer?');
+  userQuestion('Do you think I write poetry?');
+  userQuestion('Do you think Iam afraid of the sea?' );
+ 
 
-if( Qus2 === 'yes' || Qus2 === 'y')
-{
-    //console.log (Qus2);
-    alert ( 'yes,correct answer');
-    counter ++;
-}
-else if( Qus2 === 'no' || Qus2 === 'n')
-{
-   alert ('wrong answer, I will show you some of my poems next time!!');
-} 
-else
-{
-    alert ('please type (yes) or (no) or (y) or (n)');
-}
+  function userQuestion2 (questions,unCorrectAns,correctAns) {
+    let userInput2 ;
 
-let Qus3 = prompt ('Do you think I like to drink coffee?').toLowerCase();
+    do {
+      userInput2 = prompt(questions).toLowerCase();
+    } while(userInput2 !== 'yes' && userInput2 !== 'y' && userInput2 !== 'no' && userInput2 !== 'n');
 
+    if(userInput2 === 'yes' || userInput2 === 'y') {
+      alert ('wrong Ans');  
+      //console.log(unCorrectAns);
+    } else {
+      alert ('yes correct Ans');  
+      //console.log(correctAns);
+      counter ++;
+    }
 
-if( Qus3 === 'yes' || Qus3 === 'y')
-{
-    alert ( 'wrong answer,I tend to drink tea');
-}
-else if( Qus3 === 'no' || Qus3 === 'n')
-{
-   alert ('correct answer!!');
-   counter ++;
-
-} 
-else
-{
-    alert ('please type (yes) or (no) or (y) or (n)');
-}
-
-let Qus4= prompt ('Do you think Iam afraid of the sea?').toLowerCase();
-
-if( Qus4 === 'yes' || Qus4 === 'y')
-
-{
-    //console.log (Qus4);
-    alert ( 'yes,correct answer');
-    counter ++;
-}
-else if( Qus4 === 'no' || Qus4 === 'n')
-{
-   alert ('wrong answer, really I am afraid of the sea !');
-} 
-else
-{
-    alert ('please type (yes) or (no) or (y) or (n)');
-}
-
-let Qus5= prompt ('Do you think I have a pet?').toLowerCase();
-
-
-if( Qus5 === 'yes' || Qus5 === 'y')
-{
-    alert ( 'wrong answer,I have a phobia of pets');
-}
-
-else if( Qus5 === 'no' || Qus5 === 'n')
-{
-   alert ('correct answer!!');
-   counter ++;
-
-}
-else
-{
-    alert ('please type (yes) or (no) or (y) or (n)');
-}
+  }
+  userQuestion2('Do you think I like to drink coffee?');
+  userQuestion2('Do you think I have a pet?');
 
 
 
-
-
+    
 for(let i = 0 ; i < 4; i++)
  {
   let myAge = prompt ('How old do you think I am ?');
