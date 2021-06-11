@@ -52,4 +52,9 @@ h3 {
 
 }
 
-  
+  body {
+    background-color:cornflowerblue;
+  }
+  img {
+    float: center;
+  }

@@ -69,12 +69,10 @@ else {
 
   alert ('correct answer'); break;}
 
-
 }
  
-
-
 alert ('my Age is 26');
+
 
 
   let favFruits = ['banana' ,'strawberries','apple'] ;
